@@ -10,7 +10,7 @@ $wsr = new WebsenderAPI($_POST['host'],$_POST['password'],$_POST['port']);
 $wsr->timeout = 1; // Timeoutu kısaltıyoruz.
 
 if($wsr->connect()){
-    $wsr->sendCommand("broadcast test.");
+    $wsr->sendCommand("say MineWebTR.com - Keyubu.com - Bağlantı Başarılı!");
     die("ok");
 }else{
     die("error");
