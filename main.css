@@ -24,7 +24,7 @@
 }
 body{
     background: #f8f8fb;
-    height: 100vh;
+    height: 100vh!important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,9 +184,6 @@ body{
 .swal-ul li{
     list-style: disc;
     list-style-type: disc;
-}
-body.swal2-height-auto {
-    height: unset;
 }
 
 .centered.list{
