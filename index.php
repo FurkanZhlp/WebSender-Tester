@@ -14,22 +14,22 @@
         <div class="card">
             <div class="header">
                 <span class="websender-logo"></span>
-                <h5>MINEWEBTR.COM</h5>
+                <h5>KEYUBU.COM & MINEWEBTR.COM</h5>
                 <p>WebSender Test Sayfası</p>
             </div>
             <div class="card-content">
                 <form id="check-conntection">
                     <div class="input-control">
-                        <label for="ip">IP Adresi</label>
-                        <input type="text" id="ip" name="ip" placeholder="IP Adresi" autocomplete="ip">
+                        <label for="host">IP Adresi</label>
+                        <input type="text" id="host" name="host" placeholder="IP Adresi" autocomplete="ip">
                     </div>
                     <div class="input-control">
                         <label for="port">Port</label>
                         <input type="text" id="port" name="port" placeholder="Port" autocomplete="port">
                     </div>
                     <div class="input-control">
-                        <label for="sifre">Şifre</label>
-                        <input type="password" id="sifre" name="sifre" placeholder="Şifre" autocomplete="off">
+                        <label for="password">Şifre</label>
+                        <input type="password" id="password" name="password" placeholder="Şifre" autocomplete="off">
                     </div>
                     <button type="submit" class="btn" id="submit-button">
                         TEST ET
@@ -39,12 +39,19 @@
                 Bu sayfada girdiginiz hiçbir verinin kaydı tutulmamaktadır.
                 </div>
                 <div class="centered">
-                    developed by <span>green</span>
+                    developed by <span><a href="https://minewebtr.com">green</a></span>
+                </div>
+                <div class="centered list">
+                    <a href="" target="_blank">Github</a>
+                    <a href="https://mineweb.keyubu.com/sunucu-baglantisi/websender" target="_blank">Websender Wiki</a>
+                    <a href="https://discord.gg/85pzs5D" target="_blank">Keyubu Discord</a>
+                    <a href="https://discord.gg/PFKvM7z" target="_blank">MineWeb Discord</a>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="main.js"></script>
 </html>

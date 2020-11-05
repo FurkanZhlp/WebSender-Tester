@@ -166,7 +166,7 @@ body{
     text-align: center;
     margin-top: 22px;
 }
-.centered span{
+.centered span a{
     color: green;
 }
 .m-0{
@@ -177,4 +177,19 @@ body{
 }
 .mt-1{
     margin-top: 10px!important;
+}
+.swal-ul{
+    text-align: left;
+}
+.swal-ul li{
+    list-style: disc;
+    list-style-type: disc;
+}
+body.swal2-height-auto {
+    height: unset;
+}
+
+.centered.list{
+    display: flex;
+    justify-content: space-between;
 }

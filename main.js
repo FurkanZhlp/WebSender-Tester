@@ -5,7 +5,6 @@ $("#check-conntection").on('submit',function (event) {
         url:"/check.php",
         method:"POST",
         data:formData,
-        dataType:'JSON',
         contentType: false,
         cache: false,
         processData: false,
@@ -13,10 +12,25 @@ $("#check-conntection").on('submit',function (event) {
             $("#submit-button").text("BAGLANIYOR...");
         },
         success:function(data){
-            console.log(data);
-            if(data.status)
-            {
+            if(data == "fill"){
+                swal.fire('HATA','Lütfen Tüm Alanları Doldurun','error');
             }
+            else if(data == "error"){
+                swal.fire('BAGLANTI HATASI','' +
+                    '<ul class="swal-ul">' +
+                    '<li>Baglanti ayarlarınız hatalı olabilir.</li>' +
+                    '<li>Websender surumunuz eski olabilir.</li>' +
+                    '<li>Baglanti Portunuza erişim kapalı olabilir.</li>' +
+                    '<li>Ayarları yapildiktan sonra restart atilmamıs olabilir.</li>' +
+                    '<li style="margin-top: 12px">Wiki: <a href="https://mineweb.keyubu.com/sunucu-baglantisi/websender" target="_blank">WebSender</a></li>' +
+                    '<li>Discord - <a href="https://discord.gg/85pzs5D" target="_blank">Keyubu</a></li>' +
+                    '<li>Discord - <a href="https://discord.gg/PFKvM7z" target="_blank">MineWeb</a></li>' +
+                    '</ul>' +
+                    '','error');
+            }else if(data == "ok"){
+                swal.fire('BAGLANTI YAPILDI','Sunucunuza komut gonderimi basarili!','success');
+            }
+            $("#submit-button").text("TEST ET");
         },
         error: function(){
             $("#submit-button").text("TEST ET");
