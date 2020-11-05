@@ -14,7 +14,7 @@
         <div class="card">
             <div class="header">
                 <span class="websender-logo"></span>
-                <h5>KEYUBU.COM</h5>
+                <h5>MINEWEBTR.COM</h5>
                 <p>WebSender Test Sayfası</p>
             </div>
             <div class="card-content">
@@ -36,7 +36,7 @@
                     </button>
                 </form>
                 <div class="centered m-0 mt-1">
-                Bu sayfada girdiğiniz hiçbir verinin kaydı tutulmamaktadır.
+                Bu sayfada girdiginiz hiçbir verinin kaydı tutulmamaktadır.
                 </div>
                 <div class="centered">
                     developed by <span>green</span>

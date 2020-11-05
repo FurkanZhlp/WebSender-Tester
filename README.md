@@ -1,2 +1,5 @@
-# WebSender-Tester
-a web program for websender minecraft plugin 
+# WebSender-Tester (TR)
+Websender pluginini test edebilmek için basit bir açık kaynak kodlu web programı.
+
+Demo: https://websender.minewebtr.com <br>
+Demo: https://denince.biz/websender/
